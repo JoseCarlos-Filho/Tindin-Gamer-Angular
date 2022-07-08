@@ -1,17 +1,1 @@
-#carossel-img {
-  height: 620px;
-  min-height: 360px;
-  max-width: 100%;
-  object-fit: cover;
-}
 
-#imagens-car {
-  padding: 2rem;
-}
-
-#chevron {
-  height: 40px;
-  width: 40px;
-  border: 1px solid rgb(252, 68, 68);
-  background: transparent;
-}
