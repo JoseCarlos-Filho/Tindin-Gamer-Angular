@@ -16,8 +16,18 @@
 }
 
 #chevron {
-  height: 40px;
-  width: 40px;
-  border: 1px solid rgb(252, 68, 68);
+  height: 35px;
+  width: 35px;
+  border: 3px solid rgb(252, 68, 68);
   background: transparent;
+  position: absolute;
+  top: 15.5rem;
+}
+
+#bullets-carousel{
+  style: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(252, 68, 68);
 }

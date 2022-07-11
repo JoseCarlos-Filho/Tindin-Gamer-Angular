@@ -1,0 +1,32 @@
+.navbar {
+  background-color: rgb(252, 68, 68);
+}
+
+#submit-btn {
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+h1, h4 {
+  color: #fff;
+}
+
+#btn-new-game {
+  background-color: rgb(252, 68, 68);
+  color: #fff;
+}
+
+#input-search {
+  background-color: black;
+  color: #fff;
+}
+
+

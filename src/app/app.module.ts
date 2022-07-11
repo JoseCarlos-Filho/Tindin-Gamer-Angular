@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import { PageUsuarioLogadoComponent } from './components/page-usuario-logado/page-usuario-logado.component';
 import { PageConsultaCardsComponent } from './components/page-consulta-cards/page-consulta-cards.component';
+import { PageAdminNavbarComponent } from './components/page-admin-navbar/page-admin-navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PageConsultaCardsComponent } from './components/page-consulta-cards/pag
     PageHomeCardsComponent,
     PageLoginComponent,
     PageUsuarioLogadoComponent,
-    PageConsultaCardsComponent
+    PageConsultaCardsComponent,
+    PageAdminNavbarComponent
   ],
   imports: [
     BrowserModule,
