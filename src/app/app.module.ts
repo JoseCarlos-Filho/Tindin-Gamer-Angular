@@ -6,6 +6,10 @@ import { PageHomeNavbarComponent } from './components/page-home-navbar/page-home
 import { PageHomeCarosselComponent } from './components/page-home-carossel/page-home-carossel.component';
 import { PageHomeCardsComponent } from './components/page-home-cards/page-home-cards.component';
 import { PageLoginComponent } from './components/page-login/page-login.component';
+import { HttpClientModule } from '@angular/common/http';
+import {AppRoutingModule} from './app-routing.module';
+import { PageUsuarioLogadoComponent } from './components/page-usuario-logado/page-usuario-logado.component';
+import { PageConsultaCardsComponent } from './components/page-consulta-cards/page-consulta-cards.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +17,14 @@ import { PageLoginComponent } from './components/page-login/page-login.component
     PageHomeNavbarComponent,
     PageHomeCarosselComponent,
     PageHomeCardsComponent,
-    PageLoginComponent
+    PageLoginComponent,
+    PageUsuarioLogadoComponent,
+    PageConsultaCardsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
