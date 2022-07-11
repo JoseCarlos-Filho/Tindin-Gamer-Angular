@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { PageUsuarioLogadoComponent } from './components/page-usuario-logado/page-usuario-logado.component';
 import { PageConsultaCardsComponent } from './components/page-consulta-cards/page-consulta-cards.component';
 import { PageAdminNavbarComponent } from './components/page-admin-navbar/page-admin-navbar.component';
+import { PageGameRegisterComponent } from './components/page-game-register/page-game-register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PageAdminNavbarComponent } from './components/page-admin-navbar/page-ad
     PageLoginComponent,
     PageUsuarioLogadoComponent,
     PageConsultaCardsComponent,
-    PageAdminNavbarComponent
+    PageAdminNavbarComponent,
+    PageGameRegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import {PageUsuarioLogadoComponent} from './components/page-usuario-logado/page-
 import {PageHomeNavbarComponent} from './components/page-home-navbar/page-home-navbar.component';
 import {PageAdminNavbarComponent} from './components/page-admin-navbar/page-admin-navbar.component';
 import {PageConsultaCardsComponent} from './components/page-consulta-cards/page-consulta-cards.component';
+import {PageGameRegisterComponent} from './components/page-game-register/page-game-register.component';
 
 const routes: Routes = [
    {
@@ -14,7 +15,8 @@ const routes: Routes = [
     children: [
       {path: '', component: PageHomeCarosselComponent},
       {path: 'login', component: PageLoginComponent},
-      {path: 'game/:id', component: PageConsultaCardsComponent}
+      {path: 'game/:id', component: PageConsultaCardsComponent},
+      {path: 'register', component: PageGameRegisterComponent}
     ]
   },
 
