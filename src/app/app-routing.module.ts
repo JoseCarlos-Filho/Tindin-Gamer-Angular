@@ -15,8 +15,7 @@ const routes: Routes = [
     children: [
       {path: '', component: PageHomeCarosselComponent},
       {path: 'login', component: PageLoginComponent},
-      {path: 'game/:id', component: PageConsultaCardsComponent},
-      {path: 'register', component: PageGameRegisterComponent}
+      {path: 'game/:id', component: PageConsultaCardsComponent}
     ]
   },
 
@@ -26,7 +25,8 @@ const routes: Routes = [
     path: 'admin',
     component: PageAdminNavbarComponent,
     children: [
-      {path: '', component: PageUsuarioLogadoComponent}
+      {path: '', component: PageUsuarioLogadoComponent},
+      {path: 'register', component: PageGameRegisterComponent}
     ]
   }
 ];

@@ -12,6 +12,7 @@ import { PageUsuarioLogadoComponent } from './components/page-usuario-logado/pag
 import { PageConsultaCardsComponent } from './components/page-consulta-cards/page-consulta-cards.component';
 import { PageAdminNavbarComponent } from './components/page-admin-navbar/page-admin-navbar.component';
 import { PageGameRegisterComponent } from './components/page-game-register/page-game-register.component';
+import { GameService } from './services/game.service'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { PageGameRegisterComponent } from './components/page-game-register/page-
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
