@@ -8,7 +8,7 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class GameService {
-  gameURL = `${environment.apiUrlBase}games`;
+  gameURL = `${environment.apiUrl}games`;
 
 
 

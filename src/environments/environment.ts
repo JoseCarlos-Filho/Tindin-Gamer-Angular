@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrlBase: 'https://api-labs.tindin.com.br/'
+  apiUrl: 'https://api-labs.tindin.com.br/'
 };
 
 /*
