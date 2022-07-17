@@ -33,7 +33,10 @@ export class PageLoginComponent implements OnInit {
       password: this.loginForm.value.password?.toString()
     };
     // Process checkout data here
-    this.loginService.login(login)
+    let algumacoisa = this.loginService.login(login).subscribe(login =>{
+      console.log(login)
+    })
+    console.log(algumacoisa);
     //console.warn('Your order has been submitted', this.loginForm.value);
     //this.loginForm.reset();
   }
