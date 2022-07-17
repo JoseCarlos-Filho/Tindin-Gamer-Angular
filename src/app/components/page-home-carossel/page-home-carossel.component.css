@@ -11,8 +11,8 @@
 }
 
 #imagens-car {
-  padding: 2rem 2rem 0rem 2rem;
-  margin-bottom: 2rem;
+  padding: 0rem 2rem 0rem 0rem;
+  margin-bottom: 3rem;
 }
 
 #chevron {
@@ -21,7 +21,7 @@
   border: 3px solid rgb(252, 68, 68);
   background: transparent;
   position: absolute;
-  top: 15.5rem;
+  top: 14.5rem;
 }
 
 #bullets-carousel{

@@ -13,6 +13,8 @@ import { PageConsultaCardsComponent } from './components/page-consulta-cards/pag
 import { PageAdminNavbarComponent } from './components/page-admin-navbar/page-admin-navbar.component';
 import { PageGameRegisterComponent } from './components/page-game-register/page-game-register.component';
 import { GameService } from './services/game.service'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { GameService } from './services/game.service'
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [GameService],
   bootstrap: [AppComponent]
