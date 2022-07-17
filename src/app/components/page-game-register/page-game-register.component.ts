@@ -9,6 +9,11 @@ import { GameService } from '../../services/game.service';
 })
 export class PageGameRegisterComponent implements OnInit {
 
+  registerForm = this.formBuilder.group({
+    title: '',
+    description: '',
+  });
+
   constructor(private formBuilder: FormBuilder,
               private gameService: GameService) { }
 
@@ -21,6 +26,8 @@ export class PageGameRegisterComponent implements OnInit {
     const game: Game = {
       title: this.registerForm.value.title?.toString(),
       description: this.registerForm.value.description?.toString(),
+      // title: this.registerForm.value.title?.toString(),
+      // description: this.registerForm.value.description?.toString(),
     };
     // Process checkout data here
     let algumacoisa = this.loginService.login(login).subscribe(login =>{

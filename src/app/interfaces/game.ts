@@ -1,7 +1,7 @@
 export interface Game {
 _id: string;
-title: string;
-description: string;
+title?: string;
+description?: string;
 photos: Photo[];
 genres?: string[];
 platforms?: string[];
