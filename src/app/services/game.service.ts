@@ -8,13 +8,13 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class GameService {
-  gameURL = `${environment.apiUrl}games`;
+  gameURL = `${environment.apiUrl}/games`;
   token = JSON.parse(localStorage.getItem('token')!)
 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'x-key-api': this.token
+      'x-api-key': this.token
      })
   };
 
@@ -26,9 +26,7 @@ export class GameService {
     return this.http.get<RespostaGame>(this.gameURL);
   }
 
-  addGame(game: Game){
-    this.http.post(this.gameURL, game, this.httpOptions).subscribe(game => {
-      console.log(game)
-    })
+  addGame(game: Game): Observable<any> {
+    return this.http.post(this.gameURL, game, this.httpOptions)
   }
 }

@@ -33,7 +33,7 @@
       <div class="title-card">
         <div class="title-game">
           <span class="raiting">7,5/10</span>
-          <input type="text" class="title-game-text" placeholder="Enter game name">
+          <input id="title" type="text" class="title-game-text" placeholder="Enter game name" formControlName="title">
         </div>
         <input type="text" class="game-text-resume" placeholder="Enter resume game here">
       </div>
@@ -103,7 +103,7 @@
         <div>
           <span class="Description">Description:</span>
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Enter description game" id="floatingTextarea2" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="Enter description game" id="description" style="height: 100px" formControlName="description"></textarea>
             <label for="floatingTextarea2"></label>
           </div>
         </div>

@@ -25,12 +25,14 @@ export class PageGameRegisterComponent implements OnInit {
     //this.login.password = this.loginForm.value.password?.toString();
     const game: Game = {
       title: this.registerForm.value.title?.toString(),
-      // description: this.registerForm.value.description?.toString(),
+      description: this.registerForm.value.description?.toString(),
+      photos: []
       // title: this.registerForm.value.title?.toString(),
       // description: this.registerForm.value.description?.toString(),
     };
+    console.log(game);
     // Process checkout data here
-    let algumacoisa = this.gameService.game(game).subscribe(game => {
+    let algumacoisa = this.gameService.addGame(game).subscribe(game => {
       console.log(game)
     })
     console.log(algumacoisa);

@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class LoginService {
-  loginURL = `${environment.apiUrl}auth`;
+  loginURL = `${environment.apiUrl}/auth`;
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://api-labs.tindin.com.br/'
+  apiUrl: 'https://api-labs.tindin.com.br'
+  //apiUrl: 'http://localhost:4200/api'
 };
 
 /*

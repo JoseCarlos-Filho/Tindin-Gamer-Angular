@@ -3,7 +3,7 @@
   <div class="row">
       <div class="col-md-3" *ngFor="let game of games">
         <div id="card-shape" class="card">
-        <a [routerLink]="['/game', 1 ]"><img src="{{ game.photos[0].url }}" class="card-img-top" alt="..."></a>
+        <a [routerLink]="['/game', 1 ]"><img src="{{ game.photos![0].url }}" class="card-img-top" alt="..."></a>
           <div id="card-corpo" class="card-body">
             <h5 class="card-title">{{ game.title }}</h5>
             <span class="card-medium-value">${{ game.mediumPrice }}</span>

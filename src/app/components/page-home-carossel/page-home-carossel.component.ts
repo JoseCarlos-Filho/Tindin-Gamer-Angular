@@ -15,8 +15,8 @@ export class PageHomeCarosselComponent implements OnInit {
   ngOnInit(): void {
     this.gameService.getGames().subscribe(
       (data) => {
-        data.games.forEach((game) => console.log(game.photos[0].url))
-        console.log(data.games)
+        //data.games.forEach((game) => console.log(game.photos![0].url))
+        //console.log(data.games)
         this.games = data.games;
       },
       (error) => {

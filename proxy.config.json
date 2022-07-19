@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://api-labs.tindin.com.br",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}
