@@ -1,21 +1,37 @@
+.navegacao {
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#home {
+  padding-right: 5px;
+}
+
+#name-game {
+  padding-left: 5px;
+}
+
 .master-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .container {
-  margin-left: 1rem;
-  margin-top: 4rem;
+  margin-right: 20rem;
 }
 
 #card {
-  width: 800px;
-  margin-left: 10rem;
-  margin-top: 4rem;
+  width: 500px;
+  margin-left: 5rem;
 }
 
 .title-game {
   display: flex;
+  border: 1px solid rgb(252, 68, 68);
 }
 
 .raiting {
