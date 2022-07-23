@@ -32,19 +32,33 @@
     </div>
   </div>
   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
     <div class="container">
+
       <div class="title-card">
         <div class="title-game">
           <span class="raiting">7,5/10</span>
-          <input id="title" type="text" class="title-game-text w-100" placeholder="Enter game name" formControlName="title">
+          <input
+              id="title-g"
+              type="text"
+              class="title-game-text w-100 border border-4 border-danger border-opacity-50 mb-1"
+              placeholder="Enter game name" formControlName="title"
+            >
         </div>
-        <input type="text" class="game-text-resume w-100" placeholder="Enter resume game here">
+        <input
+            id="resume-g"
+            type="text"
+            class="game-text-resume w-100 border border-4 border-danger border-opacity-50"
+            placeholder="Enter resume game here"
+          >
       </div>
+
       <hr>
+
       <div class="cards-info">
-        <div>
-          <span class="Genres">Genres:</span>
-          <select class="form-select" aria-label="Default select example">
+        <div class="d-flex my-2">
+          <span class="Genres me-2">Genres:</span>
+          <select class="form-select rounded-0 border border-4 border-danger border-opacity-50" aria-label="Default select example">
             <option selected>Select genres</option>
             <option value="1">One genre</option>
             <option value="2">Two genres</option>
@@ -52,9 +66,9 @@
           </select>
         </div>
 
-        <div>
-          <span class="Studio">Studio:</span>
-          <select class="form-select" aria-label="Default select example">
+        <div class="d-flex my-2">
+          <span class="Studio me-2">Studio:</span>
+          <select class="form-select rounded-0 border border-4 border-danger border-opacity-50" aria-label="Default select example">
             <option selected>Select one studio</option>
             <option value="1">One studio</option>
             <option value="2">Two studio</option>
