@@ -41,13 +41,13 @@
           <span class="raiting">7,5/10</span>
           <input
               type="text"
-              class="title-game-text w-100 border border-4 border-danger border-opacity-50 mb-1"
+              class="title-game-text w-100 border border-4 border-danger mb-1"
               placeholder="Enter game name" formControlName="title"
             >
         </div>
         <input
             type="text"
-            class="game-text-resume w-100 border border-4 border-danger border-opacity-50"
+            class="game-text-resume w-100 border border-4 border-danger"
             placeholder="Enter resume game here"
           >
       </div>
@@ -59,7 +59,7 @@
           <span class="Genres me-5">Genres:</span>
           <select
               id="input-genres"
-              class="form-select rounded-0 border border-4 border-danger border-opacity-50 w-75"
+              class="form-select rounded-0 border border-4 border-danger w-75"
               aria-label="Default select example"
             >
               <option selected>Select genres</option>
@@ -73,7 +73,7 @@
           <span class="Studio me-5">Studio:</span>
           <select
               id="input-studio"
-              class="form-select rounded-0 border border-4 border-danger border-opacity-50 w-75"
+              class="form-select rounded-0 border border-4 border-danger w-75"
               aria-label="Default select example"
             >
               <option selected>Select one studio</option>
@@ -87,7 +87,7 @@
           <span class="Company me-5">Company:</span>
           <select
               id="input-company"
-              class="form-select rounded-0 border border-4 border-danger border-opacity-50 w-75"
+              class="form-select rounded-0 border border-4 border-danger w-75"
               aria-label="Default select example"
             >
               <option selected>Select one company</option>
@@ -107,21 +107,33 @@
 
         </div>
 
-        <div>
+        <div class="d-flex my-2 justify-content-between">
           <span class="Medium-price">Medium price:</span>
-          <input type="text" class="game-text-price" placeholder="Enter medium price">
+          <input
+              type="text"
+              class="game-text-price rounded-0 border border-4 border-danger w-75"
+              placeholder="Enter medium price"
+            >
         </div>
 
-        <div>
+        <div class="d-flex my-2 justify-content-between">
           <span class="Release-year">Release Year:</span>
-          <input type="date" class="game-text-year" placeholder="Enter release year">
+          <input
+              type="date"
+              class="game-text-year rounded-0 border border-4 border-danger w-75"
+              placeholder="Enter release year"
+            >
         </div>
 
-        <div>
+        <div class="d-flex my-2 justify-content-between">
           <span class="Description">Description:</span>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Enter description game" id="description" style="height: 100px" formControlName="description"></textarea>
-            <label for="floatingTextarea2"></label>
+          <div id="description-form"class="form-floating w-75">
+            <textarea
+                class="form-control rounded-0 border border-4 border-danger w-100"
+                placeholder="Enter description game text-white"
+                id="descricao"
+                formControlName="description">
+              </textarea>
           </div>
         </div>
       </div>

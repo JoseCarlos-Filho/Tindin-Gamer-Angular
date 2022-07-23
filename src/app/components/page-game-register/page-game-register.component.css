@@ -54,7 +54,21 @@
 .game-text-resume,
 #input-genres,
 #input-studio,
-#input-company {
+#input-company,
+.game-text-price,
+.game-text-year {
+  background-color: rgb(63, 64, 63);
+  color: #fff;
+}
+
+#description-form{
+  height: 100px;
+  background-color: rgb(63, 64, 63);
+
+}
+
+#descricao {
+  height: 100px;
   background-color: rgb(63, 64, 63);
   color: #fff;
 }
