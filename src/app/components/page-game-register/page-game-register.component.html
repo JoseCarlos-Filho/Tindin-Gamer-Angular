@@ -31,6 +31,7 @@
       </div>
     </div>
   </div>
+
   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
     <div class="container">
@@ -39,14 +40,12 @@
         <div class="title-game">
           <span class="raiting">7,5/10</span>
           <input
-              id="title-g"
               type="text"
               class="title-game-text w-100 border border-4 border-danger border-opacity-50 mb-1"
               placeholder="Enter game name" formControlName="title"
             >
         </div>
         <input
-            id="resume-g"
             type="text"
             class="game-text-resume w-100 border border-4 border-danger border-opacity-50"
             placeholder="Enter resume game here"
@@ -56,33 +55,43 @@
       <hr>
 
       <div class="cards-info">
-        <div class="d-flex my-2">
-          <span class="Genres me-2">Genres:</span>
-          <select class="form-select rounded-0 border border-4 border-danger border-opacity-50" aria-label="Default select example">
-            <option selected>Select genres</option>
-            <option value="1">One genre</option>
-            <option value="2">Two genres</option>
-            <option value="3">Three genres</option>
+        <div class="d-flex my-2 justify-content-between">
+          <span class="Genres me-5">Genres:</span>
+          <select
+              id="input-cards-info"
+              class="form-select rounded-0 border border-4 border-danger border-opacity-50 w-75"
+              aria-label="Default select example"
+            >
+              <option selected>Select genres</option>
+              <option value="1">One genre</option>
+              <option value="2">Two genres</option>
+              <option value="3">Three genres</option>
           </select>
         </div>
 
-        <div class="d-flex my-2">
-          <span class="Studio me-2">Studio:</span>
-          <select class="form-select rounded-0 border border-4 border-danger border-opacity-50" aria-label="Default select example">
-            <option selected>Select one studio</option>
-            <option value="1">One studio</option>
-            <option value="2">Two studio</option>
-            <option value="3">Three studio</option>
+        <div class="d-flex my-2 justify-content-between">
+          <span class="Studio me-5">Studio:</span>
+          <select
+              class="form-select rounded-0 border border-4 border-danger border-opacity-50 w-75"
+              aria-label="Default select example"
+            >
+              <option selected>Select one studio</option>
+              <option value="1">One studio</option>
+              <option value="2">Two studio</option>
+              <option value="3">Three studio</option>
           </select>
         </div>
 
-        <div>
-          <span class="Company">Company:</span>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Select one company</option>
-            <option value="1">One company</option>
-            <option value="2">Two company</option>
-            <option value="3">Three company</option>
+        <div class="d-flex my-2 justify-content-between">
+          <span class="Company me-5">Company:</span>
+          <select
+              class="form-select rounded-0 border border-4 border-danger border-opacity-50 w-75"
+              aria-label="Default select example"
+            >
+              <option selected>Select one company</option>
+              <option value="1">One company</option>
+              <option value="2">Two company</option>
+              <option value="3">Three company</option>
           </select>
         </div>
 
