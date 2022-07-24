@@ -12,6 +12,7 @@ export class PageGameRegisterComponent implements OnInit {
   registerForm = this.formBuilder.group({
     title: '',
     description: '',
+    genres: [],
   });
 
   constructor(private formBuilder: FormBuilder,
@@ -26,7 +27,8 @@ export class PageGameRegisterComponent implements OnInit {
     const game: Game = {
       title: this.registerForm.value.title?.toString(),
       description: this.registerForm.value.description?.toString(),
-      photos: []
+      photos: [],
+      // genres: this.registerForm.value.genres
       // title: this.registerForm.value.title?.toString(),
       // description: this.registerForm.value.description?.toString(),
     };

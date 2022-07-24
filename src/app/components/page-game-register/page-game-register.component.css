@@ -61,10 +61,9 @@
   color: #fff;
 }
 
-#description-form{
+#description-form {
   height: 100px;
   background-color: rgb(63, 64, 63);
-
 }
 
 #descricao {
@@ -83,37 +82,18 @@
   width: 457px;
 }
 
-.cards-price {
-  color: #fff;
-}
-
 hr {
   border: 1px solid #fff;
   background: #fff;
-  max-width: 80%;
+  max-width: 100%;
 }
 
-.vote-now {
+.save-game {
   background-color: rgb(252, 68, 68);
   color: #fff;
 }
 
-#valor {
-  color:rgb(252, 68, 68);
-  font-size: 20px;
-}
-
-.h5 {
-  font-weight: 600;
-  color: #fff;
-}
-
-.footer-title {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-}
-
-#text-description {
+.cancel {
+  background-color: rgb(63, 64, 63);
   color: #fff;
 }
